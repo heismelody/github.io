@@ -1,12 +1,13 @@
 import Vue from 'vue';
 
+require('./styles/base.less');
 import post from 'component/Post/Post';
 import 'vue-awesome/icons';
 import Icon from 'vue-awesome/components/Icon';
-import Welcome from 'component/Welcome/Welcome';
+import app from './app';
 
 const routes = {
-  '/': Welcome,
+  '/': app,
 };
 
 Vue.component('icon', Icon);

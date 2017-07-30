@@ -1,4 +1,6 @@
+
 .welcome {
+
   font-family: PingFangSC-Regular, 'Roboto', Verdana, "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
@@ -21,10 +23,14 @@
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    color: #000;
+    color: rgba(208, 208, 208, 0.6);
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
     transition-propety: background-color;
+  }
+
+  a:hover {
+    color: #fff;
   }
 
   .welcome-avatar img {
@@ -39,6 +45,7 @@
   }
 
   .welcome-name {
+    color: rgba(255, 255, 255, 0.75);
     font-size: 26px;
     font-weight: bold;
     font-style: normal;
@@ -52,7 +59,12 @@
     font-size: 16px;
     font-weight: 200;
     margin-bottom: 26px;
-    color: #666;
+    color: #8a8a8a;
+  }
+
+  .welcome-slogan:hover {
+    color: rgba(256, 256, 256, 0.8);
+    cursor: pointer;
   }
 
   hr {
@@ -67,7 +79,7 @@
   }
 
   .welcome-nav {
-    color: #bbb;
+    color: #000;
     text-align: center;
     line-height: 1.8em;
     padding: 0;
