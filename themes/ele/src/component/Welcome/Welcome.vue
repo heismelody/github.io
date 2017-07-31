@@ -18,15 +18,15 @@
 
     <ul class="welcome-nav">
         <li class="welcome-item">
-          <a href="/archives">Blog</a>
+          <a href="/blog">Blog</a>
           <span>|</span>
         </li>
         <li class="welcome-item">
-          <a href="" rel="noopener noreferrer" target="_blank">Wiki</a>
+          <a href="https://github.com/heismelody" rel="noopener noreferrer" target="_blank">Wiki</a>
           <span>|</span>
         </li>
         <li class="welcome-item">
-          <a href="" rel="noopener noreferrer" target="_blank">Github</a>
+          <a href="https://github.com/heismelody" rel="noopener noreferrer" target="_blank">Github</a>
           <span>|</span>
         </li>
 
@@ -37,6 +37,5 @@
 <script>
 export default {
   name: 'Welcome',
-
 }
 </script>

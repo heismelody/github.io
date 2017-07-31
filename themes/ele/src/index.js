@@ -5,9 +5,10 @@ import post from 'component/Post/Post';
 import 'vue-awesome/icons';
 import Icon from 'vue-awesome/components/Icon';
 import app from './app';
+import blog from 'component/Blog';
 
 const routes = {
-  '/': app,
+  '/': blog,
 };
 
 Vue.component('icon', Icon);
