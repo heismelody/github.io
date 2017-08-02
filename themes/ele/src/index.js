@@ -6,27 +6,29 @@ import 'vue-awesome/icons';
 import Icon from 'vue-awesome/components/Icon';
 import app from './app';
 import blog from 'component/Blog';
+import Welcome from 'component/Welcome/Welcome';
+import VueRouter from 'vue-router';
 
-const routes = {
-  '/': blog,
-};
+
+const root = document.createElement('div');
+root.setAttribute('id', 'app');
+document.body.appendChild(root);
+
+const routes = [
+    { path: '/', component: Welcome },
+    { path: '/blog', component: blog },
+];
 
 Vue.component('icon', Icon);
+Vue.use(VueRouter);
 
-let root = document.createElement('div');
-
-root.setAttribute('id','app');
-document.body.appendChild(root);
+const router = new VueRouter({
+  routes,
+});
 
 new Vue({
   el: '#app',
-  data: {
-    currentRoute: window.location.pathname
-  },
-  computed: {
-    ViewComponent () {
-      return routes[this.currentRoute] || NotFound
-    }
-  },
-  render (h) { return h(this.ViewComponent) }
-})
+  router,
+  render: h => h(app),
+});
+
