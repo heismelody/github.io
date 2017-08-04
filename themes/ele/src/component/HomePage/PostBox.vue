@@ -24,7 +24,11 @@
 
 <script>
 export default {
-  name: 'postBox'
+  name: 'postBox',
+
+  props: {
+    title
+  }
 }
 </script>
 
