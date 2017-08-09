@@ -8,6 +8,8 @@
       <post-box></post-box>
       <post-box></post-box>
       <post-box></post-box>
+
+      <pagination></pagination>
     </div>
     <site-footer></site-footer>
   </div>
@@ -321,11 +323,13 @@ const data2 = {
     }
   ]
 };
+import pagination from './HomePage/Pagination';
 
 export default {
   name: 'blog',
 
   components: {
+    pagination,
     siteFooter,
     siteHeader,
     postBox

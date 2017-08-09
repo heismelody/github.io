@@ -26,9 +26,9 @@
 export default {
   name: 'postBox',
 
-  props: {
-    title
-  }
+  // props: {
+  //   title
+  // }
 }
 </script>
 
@@ -45,6 +45,10 @@ export default {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+.post:last-child {
+    border-bottom: none;
 }
 
 .entry {
