@@ -57,6 +57,12 @@
 
 <script>
 export default {
-  name: 'pagination'
+  name: 'pagination',
+
+  data() {
+    return {
+      as: 'a',
+    }
+  },
 }
 </script>

@@ -351,7 +351,6 @@ body {
 
 .container {
     background-color: #fff;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
 }
 </style>
