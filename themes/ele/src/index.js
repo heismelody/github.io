@@ -37,8 +37,3 @@ new Vue({
   router,
   render: h => h(app),
 });
-
-
-import { getPosts } from './lib/api.js';
-
-getPosts(1);

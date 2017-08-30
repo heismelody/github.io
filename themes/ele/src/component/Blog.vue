@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="aaa">
+  <div class="blog">
     <site-header></site-header>
     <div class="container">
       <post-box></post-box>
@@ -9,7 +9,11 @@
       <post-box></post-box>
       <post-box></post-box>
 
-      <pagination></pagination>
+      <pagination
+        page-count="10"
+
+      >
+      </pagination>
     </div>
     <site-footer></site-footer>
   </div>
@@ -324,6 +328,43 @@ const data2 = {
   ]
 };
 import pagination from './HomePage/Pagination';
+import {getPosts} from 'lib/api.js';
+import Vue from 'vue';
+
+new Vue({
+  el: '.blog',
+  data: {
+    fields: {
+      pageSize: 10,
+      page: 1,
+      last_page: 1,
+    }
+  },
+  created: function() {
+    let page = getPosts();
+  },
+  methods: {
+    clickPrePage: function(e) {
+      if (this.fields.page < this.fields.last_page) {
+        this.fields.page = this.fields.page - 1;
+      }
+    },
+    clickNextPage: function(e) {
+      if (this.fields.page < this.fields.last_page) {
+        this.fields.page = this.fields.page - 1;
+      }
+    },
+    // clickPage: function(e) {
+    //   this.page
+    // },
+    clickFirstPage: function(e) {
+      this.fields.page = 1;
+    },
+    clickLastPage: function(e) {
+      this.fields.page = this.fields.last_page;
+    },
+  }
+})
 
 export default {
   name: 'blog',
@@ -333,7 +374,7 @@ export default {
     siteFooter,
     siteHeader,
     postBox
-  }
+  },
 }
 </script>
 

@@ -29,7 +29,7 @@
 <template lang="html">
   <div class="archive-pagination pagination">
     <ul>
-      <li class="pagination-previous">
+      <li class="pagination-previous" :click='clickPrePage'>
         <a href="">« Prev Page</a>
       </li>
       <li>
@@ -48,7 +48,7 @@
       <li>
         <a href="">6</a>
       </li>
-      <li class="pagination-next">
+      <li class="pagination-next" :click='clickNextPage'>
         <a href="">Next Page »</a>
       </li>
     </ul>
@@ -58,11 +58,30 @@
 <script>
 export default {
   name: 'pagination',
-
+  props: {
+    pageCount: String
+  },
   data() {
     return {
       as: 'a',
     }
   },
+  methods: {
+    clickPrePage: function(e) {
+      this.$emit('clickPrePage')
+    },
+    clickNextPage: function(e) {
+      this.$emit('clickNextPage')
+    },
+    clickPage: function(e) {
+      this.$emit('clickPage', page)
+    },
+    clickFirstPage: function(e) {
+      this.$emit('clickFirstPage')
+    },
+    clickLastPage: function(e) {
+      this.$emit('clickLastPage')
+    },
+  }
 }
 </script>
