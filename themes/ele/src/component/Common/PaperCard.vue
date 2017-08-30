@@ -3,6 +3,8 @@
     padding: 28px;
     border: 1px solid #e7e9eb;
     border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 </style>
 

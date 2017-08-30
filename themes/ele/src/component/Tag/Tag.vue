@@ -32,11 +32,10 @@
 <script>
 import siteHeader from 'component/Header';
 import siteFooter from 'component/Footer';
-import meProfile from 'component/Me/MeProfile';
 import paperCard from 'component/Common/PaperCard';
 
 export default {
-  name: 'me',
+  name: 'tag',
 
   components: {
     siteFooter,

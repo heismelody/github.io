@@ -31,7 +31,7 @@ export default {
 }
 
 .footer-text {
-    font-size: 14px;
+    font-size: 12px;
     color: #4B4B4B;
     text-align: center;
 }
