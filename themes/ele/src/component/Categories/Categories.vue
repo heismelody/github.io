@@ -5,7 +5,7 @@
   }
 
   @media (min-width: 480px) {
-    .categories {
+    .categories-container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -15,7 +15,7 @@
     }
   }
 
-  .categories {
+  .categories-container {
       margin: 0 auto 60px;
       max-width: 980px;
       text-align: center;
@@ -23,62 +23,55 @@
 </style>
 
 <template lang="html">
-   <div class="aaa">
-     <site-header></site-header>
-     <div class="container">
-       <div class="categories">
-         <animate-card
-           card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
-           card-title='Avatar'
-         >
-         </animate-card>
-         <animate-card
-           card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
-           card-title='Avatar'
-         >
-         </animate-card>
+   <div class="categories-container">
+     <animate-card
+       card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
+       card-title='Avatar'
+     >
+     </animate-card>
+     <animate-card
+       card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
+       card-title='Avatar'
+     >
+     </animate-card>
 
-         <animate-card
-           card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
-           card-title='Avatar'
-         >
-         </animate-card>
-         <animate-card
-           card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
-           card-title='Avatar'
-         >
-         </animate-card>
-         <animate-card
-           card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
-           card-title='Avatar'
-         >
-         </animate-card>
+     <animate-card
+       card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
+       card-title='Avatar'
+     >
+     </animate-card>
+     <animate-card
+       card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
+       card-title='Avatar'
+     >
+     </animate-card>
+     <animate-card
+       card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
+       card-title='Avatar'
+     >
+     </animate-card>
 
-         <animate-card
-           card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
-           card-title='Avatar'
-         >
-         </animate-card>
-         <animate-card
-           card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
-           card-title='Avatar'
-         >
-         </animate-card>
-         <animate-card
-           card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
-           card-title='Avatar'
-         >
-         </animate-card>
-         <animate-card
-           card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
-           card-title='Avatar'
-         >
-         </animate-card>
-       </div>
-     </div>
-     <site-footer></site-footer>
+     <animate-card
+       card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
+       card-title='Avatar'
+     >
+     </animate-card>
+     <animate-card
+       card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
+       card-title='Avatar'
+     >
+     </animate-card>
+     <animate-card
+       card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
+       card-title='Avatar'
+     >
+     </animate-card>
+     <animate-card
+       card-img='https://avatars2.githubusercontent.com/u/9329094?v=4&s=460'
+       card-title='Avatar'
+     >
+     </animate-card>
    </div>
-</div>
 </template>
 <script>
 import siteHeader from 'component/Header';

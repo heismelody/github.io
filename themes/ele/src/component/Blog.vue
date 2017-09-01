@@ -1,21 +1,17 @@
 <template lang="html">
-  <div class="blog">
-    <site-header></site-header>
-    <div class="container">
-      <post-box></post-box>
-      <post-box></post-box>
-      <post-box></post-box>
-      <post-box></post-box>
-      <post-box></post-box>
-      <post-box></post-box>
+  <div class="blog-container">
+    <post-box></post-box>
+    <post-box></post-box>
+    <post-box></post-box>
+    <post-box></post-box>
+    <post-box></post-box>
+    <post-box></post-box>
 
-      <pagination
-        page-count="10"
+    <pagination
+      page-count="10"
 
-      >
-      </pagination>
-    </div>
-    <site-footer></site-footer>
+    >
+    </pagination>
   </div>
 </template>
 
@@ -390,7 +386,7 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-.container {
+.blog-container {
     background-color: #fff;
     padding: 50px;
 }

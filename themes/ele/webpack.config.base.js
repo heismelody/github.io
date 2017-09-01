@@ -16,6 +16,7 @@ module.exports = {
       component: path.resolve(__dirname, 'src/component/'),
       styles: path.resolve(__dirname, 'src/styles/'),
       lib: path.resolve(__dirname, 'src/lib'),
+      vue: 'vue/dist/vue.js',
     },
     extensions: ['.vue', '.tsx', '.ts', '.js'],
   },

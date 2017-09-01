@@ -1,32 +1,28 @@
 <style media="screen">
-  .container {
+  .me-container {
       background-color: #fff;
       padding: 50px;
   }
 </style>
 
 <template lang="html">
-  <div class="aaa">
-    <site-header></site-header>
-    <div class="container">
-      <me-profile></me-profile>
-      <paper-card>
-        sdfsdfs
-      </paper-card>
+  <div class="me-container">
+    <me-profile></me-profile>
+    <paper-card>
+      sdfsdfs
+    </paper-card>
 
-      <paper-card>
-        sdfsdfs
-      </paper-card>
+    <paper-card>
+      sdfsdfs
+    </paper-card>
 
-      <paper-card>
-        sdfsdfs
-      </paper-card>
+    <paper-card>
+      sdfsdfs
+    </paper-card>
 
-      <paper-card>
-        sdfsdfs
-      </paper-card>
-    </div>
-    <site-footer></site-footer>
+    <paper-card>
+      sdfsdfs
+    </paper-card>
   </div>
 </template>
 <script>

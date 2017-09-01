@@ -1,0 +1,116 @@
+<style media="screen">
+  .error-404-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #1c285e;
+  }
+
+  .svg-404 {
+    margin: -269px 0 0 -215px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 429px;
+    height: 537px;
+    z-index: 1;
+  }
+
+  .error-404-container .section-content {
+    margin: 0 auto;
+    width: 620px;
+  }
+
+
+  @media only screen and (max-width: 1366px) {
+    .error-404-container .section-content {
+      width: 550px;
+    }
+  }
+
+  .error-404-container .section-content {
+    width: 420px;
+  }
+
+  .error-404-container .section-content .title {
+    display: inline-block;
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    position: relative;
+    z-index: 2;
+    font: 300 14px/1 "sofia-pro", sans-serif;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+
+  .error-404-container .section-content .catcher {
+    position: relative;
+    z-index: 2;
+    font: 50px/1.2 "Playfair Display", serif;
+    text-transform: lowercase;
+  }
+
+  .error-404-inner {
+    color: #fff;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    z-index: 2;
+  }
+</style>
+
+<template lang="html">
+  <div class="error-404-container">
+    <div class="error-404-inner">
+      <div class="section-content">
+        <h1 class="title">Error 404</h1>
+        <div class="catcher">Ooops, something <br>went wrong</div>
+      </div>
+    </div>
+    <span class="svg-404">
+      <svg version="1.1" id="svg5-Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="429.482px" height="537.826px" viewBox="0 0 429.482 537.826" enable-background="new 0 0 429.482 537.826" xml:space="preserve">
+        <g>
+          <g enable-background="new">
+            <g>
+              <polygon fill="#822A2A" points="326.134,246.487 242.846,198.085 263.104,186.389 346.392,234.791 			"></polygon>
+            </g>
+            <g>
+              <polygon fill="#A83E3E" points="260.396,415.342 177.108,366.94 176.925,302.411 260.213,350.813 			"></polygon>
+            </g>
+            <g>
+              <polygon fill="#822A2A" points="209.911,313.588 126.624,265.186 176.737,236.253 260.025,284.655 			"></polygon>
+            </g>
+            <g>
+              <polygon fill="#A83E3E" points="260.025,284.655 176.737,236.253 176.446,133.335 259.733,181.737 			"></polygon>
+            </g>
+            <g>
+              <polygon fill="#161F47" points="135.457,422.84 52.17,374.439 52.034,326.66 135.322,375.062 			"></polygon>
+            </g>
+            <g>
+              <polygon fill="#223070" points="242.113,119.095 158.826,70.693 242.348,22.472 325.636,70.873 			"></polygon>
+            </g>
+            <g>
+              <polygon fill="#182352" points="135.322,375.062 52.034,326.66 158.826,70.693 242.113,119.095 			"></polygon>
+            </g>
+            <g>
+              <path fill="#243473" d="M326.134,246.487l20.258-11.696l0.188,66.158l-20.258,11.696l0.183,64.529l-66.109,38.168l-0.183-64.529
+                L135.457,422.84l-0.135-47.778l106.791-255.967l83.522-48.222L326.134,246.487z M260.025,284.655l-0.292-102.918l-49.822,131.851
+                L260.025,284.655">
+              </path>
+            </g>
+          </g>
+        </g>
+        <line fill="none" stroke="#FFFFFF" stroke-width="1.1817" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="240.951" y1="63.222" x2="240.951" y2="0.591"></line>
+        <polygon fill="#A83E3E" points="241.468,0.591 241.468,29.051 284.006,14.821 "></polygon>
+        <polygon fill="#16214D" points="215.476,533.623 0.07,409.258 0,413.462 215.406,537.826 429.412,413.46 429.482,409.256 "></polygon>
+      </svg>
+    </span>
+  </div>
+</template>
+<script>
+export default {
+  name: 'ErrorFourOFour',
+}
+</script>

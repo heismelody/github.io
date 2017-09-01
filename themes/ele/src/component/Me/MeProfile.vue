@@ -62,7 +62,7 @@
     z-index: 1;
   }
 
-  .container {
+  .me-container {
     width: 800px;
     margin: auto;
     position: relative;

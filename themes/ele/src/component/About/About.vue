@@ -8,11 +8,9 @@
 
 <template lang="html">
   <div class="aaa">
-    <site-header></site-header>
-    <div class="container">
+    <div class="about-container">
 
     </div>
-    <site-footer></site-footer>
   </div>
 </template>
 
