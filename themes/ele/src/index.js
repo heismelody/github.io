@@ -15,6 +15,7 @@ import Post from 'component/Post/Post';
 import siteFooter from 'component/Footer';
 import siteHeader from 'component/Header';
 import ErrorFourOFour from 'component/Error/404';
+import Archive from 'component/Archive/Archive';
 
 
 const root = document.createElement('div');
@@ -36,11 +37,12 @@ const routes = [
     { path: '/', component: Welcome },
     { path: '/blog', component: BlogWrapper,
       children: [
-        { path: '', component: blog },
-        { path: 'blog/1', component: Post },
+        { path: 'blog', component: blog },
+        { path: 'page/1', component: Post },
+        { path: 'category', component: Categories },
+        { path: 'archive', component: Archive },
         { path: 'me', component: me },
         { path: 'about', component: about },
-        { path: 'categories', component: Categories },
       ]
     },
     { path: '/404', component: ErrorFourOFour},

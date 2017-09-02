@@ -2,13 +2,13 @@
 </style>
 
 <template lang="html">
-  <div class="about-container">
+  <div class="archive-container">
 
   </div>
 </template>
 
 <script>
 export default {
-  name: 'about',
+  name: 'archive',
 }
 </script>
