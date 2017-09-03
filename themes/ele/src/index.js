@@ -1,6 +1,7 @@
 import Vue from 'vue';
 
 require('./styles/base.less');
+require('./styles/markdown.less');
 import post from 'component/Post/Post';
 import 'vue-awesome/icons';
 import Icon from 'vue-awesome/components/Icon';
@@ -34,17 +35,18 @@ const BlogWrapper = {
 }
 
 const routes = [
-    { path: '/', component: Welcome },
+    { path: '/home', component: Welcome },
     { path: '/blog', component: BlogWrapper,
       children: [
-        { path: 'blog', component: blog },
-        { path: 'page/1', component: Post },
+        { path: 'posts', component: blog },
+        { path: 'post/:post_id', component: Post },
         { path: 'category', component: Categories },
         { path: 'archive', component: Archive },
         { path: 'me', component: me },
         { path: 'about', component: about },
       ]
     },
+    { path: "*", component: ErrorFourOFour },
     { path: '/404', component: ErrorFourOFour},
 ];
 

@@ -38,13 +38,12 @@
         </ul>
       </div>
       <div class="header-nav">
-        <router-link  to="/">Home</router-link>
-        <router-link to="/blog">Blog</router-link>
-        <router-link to="/blog/archive">Archive</router-link>
-        <router-link to="/blog/category">Category</router-link>
-        <router-link to="/blog/me">Me</router-link>
-        <router-link to="/blog/about">About</router-link>
-        <!-- <a v-link="{ path: '/blog/about', activeClass: 'current-page'}">About</a> -->
+        <router-link active-class='active' to="/home">Home</router-link>
+        <router-link active-class='active' to="/blog/posts">Blog</router-link>
+        <router-link active-class='active' to="/blog/archive">Archive</router-link>
+        <router-link active-class='active' to="/blog/category">Category</router-link>
+        <router-link active-class='active' to="/blog/me">Me</router-link>
+        <router-link active-class='active' to="/blog/about">About</router-link>
       </div>
     </div>
   </header>
@@ -52,7 +51,7 @@
 
 <script>
 export default {
-  name: 'siteHeader'
+  name: 'siteHeader',
 }
 </script>
 
@@ -155,10 +154,14 @@ header.site-header {
     z-index: 10;
 }
 
-.header-nav a:hover,
 .header-nav a.active {
-    border-bottom: 2px solid #201e1c;
-    color: #201e1c;
+    border-bottom: 2px solid #201e1c !important;
+    color: #201e1c !important;
+}
+
+.header-nav a:hover {
+  color: #6d6761;
+  border-bottom: 1px solid #201e1c;
 }
 
 .avatar-image {

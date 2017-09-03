@@ -328,7 +328,7 @@ import {getPosts} from 'lib/api.js';
 import Vue from 'vue';
 
 new Vue({
-  el: '.blog',
+  el: '#app',
   data: {
     fields: {
       pageSize: 10,

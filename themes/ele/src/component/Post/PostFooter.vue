@@ -1,6 +1,6 @@
 <template>
   <div class='post-footer'>
-    <icon name='bars' class='icon icon-bars'></icon>
+    <!-- <icon name='bars' class='icon icon-bars'></icon> -->
   </div>
 </template>
 

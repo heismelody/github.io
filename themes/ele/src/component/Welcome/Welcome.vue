@@ -19,7 +19,7 @@
 
         <ul class="welcome-nav">
             <li class="welcome-item">
-              <router-link to="blog">Blog</router-link>
+              <router-link to="blog/posts">Blog</router-link>
               <span>|</span>
             </li>
             <li class="welcome-item">
