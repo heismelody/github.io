@@ -29,27 +29,16 @@
 <template lang="html">
   <div class="archive-pagination pagination">
     <ul>
-      <li class="pagination-previous" :click='clickPrePage'>
-        <a href="">« Prev Page</a>
+      <li v-show="current > 1" class="pagination-previous" @click='handleClickPrePage'>
+        <a href="javascript:">« Prev Page</a>
       </li>
+
       <li>
-        <a href="">1</a>
+        <a href="javascript:">{{ current }}</a>
       </li>
-      <li class="active" aria-label="Current page">
-        <a href="">2</a>
-      </li>
-      <li>
-        <a href="">3</a>
-      </li>
-      <li>
-        <a href="">4</a>
-      </li>
-      <li class="pagination-omission">…</li>
-      <li>
-        <a href="">6</a>
-      </li>
-      <li class="pagination-next" :click='clickNextPage'>
-        <a href="">Next Page »</a>
+
+      <li v-if="current < total" class="pagination-next" @click='handleClickNextPage'>
+        <a href="javascript:">Next Page »</a>
       </li>
     </ul>
   </div>
@@ -59,29 +48,20 @@
 export default {
   name: 'pagination',
   props: {
-    pageCount: String
   },
   data() {
     return {
-      as: 'a',
+      total: 10,
+      current: 1,
     }
   },
   methods: {
-    clickPrePage: function(e) {
-      this.$emit('clickPrePage')
+    handleClickPrePage: function () {
+      this.current = this.current - 1;
     },
-    clickNextPage: function(e) {
-      this.$emit('clickNextPage')
-    },
-    clickPage: function(e) {
-      this.$emit('clickPage', page)
-    },
-    clickFirstPage: function(e) {
-      this.$emit('clickFirstPage')
-    },
-    clickLastPage: function(e) {
-      this.$emit('clickLastPage')
-    },
+    handleClickNextPage: function () {
+      this.current = this.current + 1;
+    }
   }
 }
 </script>
